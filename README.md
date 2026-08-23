@@ -45,28 +45,13 @@ The app is designed around real hospital IT constraints — it talks directly to
 | HIS integration | `http`, configurable REST endpoints, optional self-signed TLS trust |
 | Packaging | Inno Setup (Windows installer) |
 
-## Getting started
+## How it's built (for the technically curious)
 
-**Prerequisites:** [Flutter SDK](https://docs.flutter.dev/get-started/install) (Dart SDK `^3.11.5`, see [pubspec.yaml](pubspec.yaml)).
+Built with [Flutter](https://flutter.dev) (Dart SDK `^3.11.5`, see [pubspec.yaml](pubspec.yaml)). A few notable design points, purely for reference — see [License](#license) for terms of use:
 
-```bash
-git clone https://github.com/abdullahwaseem-dev/baobi-wristband-manager.git
-cd baobi-wristband-manager
-flutter pub get
-flutter run -d windows   # or: macos / linux / chrome / an attached device
-```
-
-Run the test suite:
-
-```bash
-flutter test
-```
-
-### Configuration
-
-- **HIS connection** — set your hospital's REST endpoint and auth from the in-app settings dialog (`Settings → HIS`); it's stored locally, not hardcoded.
-- **Cloud sync (optional)** — each hospital signs in with its own Firebase account; data is partitioned per-hospital by Firestore security rules (see [firestore.rules](firestore.rules)). No shared credentials are checked into this repo.
-- **Printer** — select your Windows printer name and paper stock (`BB720A` configs) from `Settings → Printer`.
+- **HIS connection** — a hospital's REST endpoint and auth are set through an in-app settings dialog, not hardcoded, so the same build works across hospitals with different HIS setups.
+- **Cloud sync (optional)** — each hospital signs in with its own Firebase account; data is partitioned per-hospital by Firestore security rules (see [firestore.rules](firestore.rules)). No shared or production credentials are checked into this repo.
+- **Printer** — Windows printer name and BB720A paper stock are configurable per install, not baked into the build.
 
 ## Project structure
 
@@ -86,13 +71,13 @@ installer/       # Windows Inno Setup script
 
 ## Get the full package
 
-This repository covers the **software**. If you're a hospital or distributor and want the complete solution — **BB720A printers, compatible wristband paper stock, and this software preconfigured for your HIS** — reach out:
+This code is **not available for self-service use or deployment** (see [License](#license) below). If you're a hospital or distributor and want the complete solution — **BB720A printers, compatible wristband paper stock, and this software licensed and preconfigured for your HIS** — that's the only way to get it running. Reach out:
 
 📧 **maw112266@gmail.com**
 
 ## License
 
-This source is shared publicly for demonstration and portfolio purposes. All rights reserved — see [LICENSE](LICENSE) for terms. For commercial licensing or deployment, contact the email above.
+**All rights reserved — no MIT/open-source license.** This repository is published to showcase the project only. No permission is granted to use, run, deploy, copy, modify, or distribute this software for any purpose, commercial or otherwise. The only way to use this software is as part of the licensed hardware + software package — see [LICENSE](LICENSE) for full terms, and contact the email above to obtain it.
 
 ---
 

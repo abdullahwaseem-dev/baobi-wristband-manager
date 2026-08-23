@@ -1,16 +1,18 @@
 Copyright (c) 2026 Baobi Wristband Manager. All rights reserved.
 
-This source code is made publicly available for viewing, evaluation, and
-portfolio/demonstration purposes only.
+This repository is published for viewing purposes only — to showcase the
+project. No license, right, or permission of any kind is granted to use,
+run, deploy, copy, modify, merge, publish, distribute, sublicense, or sell
+this software, in whole or in part, for ANY purpose (personal, internal,
+non-commercial, or commercial).
 
-Permission is NOT granted to copy, modify, merge, publish, distribute,
-sublicense, sell, or use this software or any portion of it in a commercial
-or production product without prior written permission from the copyright
-holder.
+There is no free-use, evaluation, or trial tier. To use this software you
+must obtain it as part of the official package — hardware (BB720A printer
+and compatible wristband stock) plus licensed software — by contacting:
 
-For commercial licensing, deployment, or purchase of the full hardware +
-software package (BB720A printers, compatible wristband stock, and this
-application), contact: maw112266@gmail.com
+    maw112266@gmail.com
+
+Any use of this code without such an agreement is not authorized.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
