@@ -1,0 +1,14 @@
+rules_version = '2';
+
+// Per-hospital isolation only: a hospital's own Firebase Auth UID is used
+// directly as the tenant partition key, so a signed-in hospital account can
+// only ever read/write documents under its own /hospitals/{uid}/... subtree.
+// No custom claims, no per-department partitioning, no user grants — one
+// shared login per hospital, issued by the vendor.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /hospitals/{hospitalUid}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == hospitalUid;
+    }
+  }
+}
