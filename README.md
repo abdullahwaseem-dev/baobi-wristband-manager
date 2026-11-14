@@ -1,3 +1,9 @@
+<p align="center"><img src="docs/readme-banner.svg" width="100%" alt="Baobi Wristband Manager: Patient wristband records and printing workflows." /></p>
+
+<p align="center"><a href="#project-guide">Project guide</a> · <a href="https://github.com/abdullahwaseem-dev/baobi-wristband-manager/tree/main">Browse source</a> · <a href="https://github.com/abdullahwaseem-dev">Developer profile</a></p>
+
+<a id="project-guide"></a>
+
 <div align="center">
 
 <img src="assets/images/baobi_logo.png" alt="Baobi logo" width="120" />
@@ -87,3 +93,15 @@ Built and maintained by [@abdullahwaseem-dev](https://github.com/abdullahwaseem-
 **Star ⭐ and follow the repo** to get notified about new releases and features.
 
 </div>
+
+
+---
+
+## Author and project links
+
+Built by [Muhammad Abdullah Waseem](https://github.com/abdullahwaseem-dev). [Portfolio](https://abdullah-waseem.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/abdullahwaseem-dev/) · [Project enquiries](mailto:maw112266@gmail.com)
+
+For a bug report, include the affected version, environment, reproduction steps, and expected behaviour in [Issues](https://github.com/abdullahwaseem-dev/baobi-wristband-manager/issues). If the project is useful to you, a star is appreciated.
+
+**Reuse:** review [LICENSE](LICENSE) and any third-party terms before copying or adapting the project.
+
